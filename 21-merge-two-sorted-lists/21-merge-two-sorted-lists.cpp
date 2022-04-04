@@ -11,6 +11,7 @@
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
+        //Naive Approach
         // ListNode* res=NULL;
         // vector<int> arr;
         // while(l1!=NULL){
@@ -36,6 +37,7 @@ public:
         //     }
         // }
         // return res;
+        //Optimal Approach
         if(!l1)
             return l2;
         if(!l2)
