@@ -11,6 +11,7 @@
 class Solution {
 public:
     ListNode* swapNodes(ListNode* head, int k) {
+        // Method-1
         // ListNode* curr=head,*temp=head,*curr2=head;
         // int n=0;
         // while(temp!=NULL){
@@ -23,6 +24,7 @@ public:
         //     curr2=curr2->next;
         // swap(curr->val,curr2->val);
         // return head;
+        //Method-2
         ListNode *n1 = nullptr, *n2 = nullptr;
         for (auto p = head; p != nullptr; p = p->next) {
             n2 = n2 == nullptr ? nullptr : n2->next;
