@@ -9,7 +9,7 @@ public:
                 if(mat[i][j] == 1)
                     count++;
             }
-            mpp.insert({count+1,i});
+            mpp.insert({count,i});
         }
         for(auto i:mpp){
             if(k==0)
