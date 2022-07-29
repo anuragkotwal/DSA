@@ -1,7 +1,7 @@
 class Solution {
 public:
     int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
-        //brute force approach TLE!!
+        //brute force approach TLE!! O(n^2)
     //     for(int i=0;i<gas.size();i++){
     //         int totalFuel=0,count=0,j=i;
     //         while(count<gas.size()){
@@ -15,6 +15,7 @@ public:
     //             return i;
     //     }
     //     return -1;
+        //Greedy Approach O(n)
         int tank=0,totalFuel=0,ind=0;
         for(int i=0;i<gas.size();i++){
             int temp=gas[i]-cost[i];
